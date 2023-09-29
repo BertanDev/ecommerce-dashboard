@@ -35,9 +35,29 @@ export default async function Courses() {
     },
   })
 
+  // useEffect(() => {
+  //   async function getData() {
+  //     const response = await api.get('/product/get-all', {
+  //       headers: {
+  //         Authorization: `Bearer ${token}`,
+  //         'Content-Type': 'application/json',
+  //         Accept: 'application/json',
+  //       },
+  //     })
+
+  //     const courses = response.data
+
+  //     const flattenedData = courses.products.flat()
+
+  //     setFlattenedData(flattenedData)
+  //   }
+
+  //   getData()
+  // }, [token])
+
   const courses = response.data
 
-  const flattenedData = courses.categories.flat()
+  const flattenedData = courses.products.flat()
 
   return (
     <>

@@ -169,6 +169,7 @@ export default function AddCourseModal() {
         })
 
         toast.success('Curso criado!')
+        window.location.reload()
         setOpen(false)
       } catch {
         toast.error('Algo deu errado')
@@ -203,6 +204,7 @@ export default function AddCourseModal() {
         toast.error('Algo deu errado!')
       } finally {
         setOpen(false)
+        window.location.reload()
       }
     }
   }
@@ -345,7 +347,7 @@ export default function AddCourseModal() {
                           {plans.map((plan) => {
                             return (
                               <option value={plan.id} key={plan.id}>
-                                {plan.description}
+                                {plan.name}
                               </option>
                             )
                           })}

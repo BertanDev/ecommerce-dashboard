@@ -89,6 +89,7 @@ export function CreatePlanSection() {
 
         setValue('description', '')
         setValue('name', '')
+        window.location.reload()
       } catch {
         toast.error('Algo deu errado!')
       }
@@ -108,9 +109,11 @@ export function CreatePlanSection() {
         setValue('name', '')
         setValue('duration', 0)
         setValue('price', 0)
+        window.location.reload()
       } catch {
         toast.error('Algo deu errado!')
       } finally {
+        window.location.reload()
         setValue('description', '')
         setValue('name', '')
         setCreateMode(true)

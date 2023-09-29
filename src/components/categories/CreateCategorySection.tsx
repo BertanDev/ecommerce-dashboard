@@ -52,6 +52,7 @@ export function CreateCategorySection() {
           description: data.description,
         })
         toast.success('Category created')
+        window.location.reload()
       } catch (error) {
         toast.error('Algo deu errado ')
       }
@@ -64,6 +65,7 @@ export function CreateCategorySection() {
           description: data.description,
         })
         toast.success('Updated category')
+        window.location.reload()
       } catch (error) {
         toast.error('Algo deu errado ')
       } finally {
@@ -73,6 +75,7 @@ export function CreateCategorySection() {
         setDescription('')
         setName('')
         setId(null)
+        window.location.reload()
       }
     }
   }
