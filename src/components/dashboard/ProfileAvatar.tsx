@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import avatarTeste from '../../assets/images/avatar_teste.jpeg'
+import avatarTeste from '../../assets/images/avatar_teste.png'
 
 export function ProfileAvatar() {
   return (

@@ -27,7 +27,7 @@ export default function RootLayout({
           <div className="flex flex-col justify-center items-center gap-2">
             <ProfileAvatar />
             <h2 className="text-xl font-bold text-gray-800 mb-4">
-              João Vitor Bertan
+              Administrador
             </h2>
           </div>
           <div className="flex flex-col gap-4 px-2">

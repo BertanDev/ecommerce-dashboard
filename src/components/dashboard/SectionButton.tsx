@@ -11,16 +11,19 @@ interface SectionButtonProps {
 export function SectionButton({ text, url }: SectionButtonProps) {
   const router = useRouter()
 
-  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (router.asPath === `/dashboard/${url}`) {
-      e.preventDefault()
-    }
-  }
+  // const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  //   if (router === `/dashboard/${url}`) {
+  //     e.preventDefault()
+  //   }
+  // }
 
   return (
     <>
       <Link href={`/dashboard/${url}`}>
-        <div className="p-4 bg-indigo-600 rounded-md" onClick={handleClick}>
+        <div
+          className="p-4 bg-indigo-600 rounded-md"
+          // onClick={handleClick}
+        >
           <span className="text-white text-xl">{text}</span>
         </div>
       </Link>
