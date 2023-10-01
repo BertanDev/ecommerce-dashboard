@@ -1,3 +1,5 @@
+'use client'
+
 import { RevenueGraphic } from './RevenueGraphic'
 
 export function RevenueAreaGraphic() {
