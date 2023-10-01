@@ -37,13 +37,13 @@ export default function Dashboard() {
         </div>
         {/** Graphic */}
         <div className="flex w-full bg-white pt-6 px-6  rounded-sm">
-          {typeof window !== 'undefined' ? <Graphic /> : ''}
+          {/* {typeof window !== 'undefined' ? <Graphic /> : ''} */}
         </div>
       </div>
       <div className="flex w-full h-full gap-4">
         {/** Last Sales */}
         <div className="flex w-[70%] bg-white rounded-sm">
-          {typeof window !== 'undefined' ? <RevenueAreaGraphic /> : ''}
+          {/* {typeof window !== 'undefined' ? <RevenueAreaGraphic /> : ''} */}
         </div>
         {/** Active Plans */}
         <div className="flex p-4 bg-white w-[30%] justify-center rounded-sm">
