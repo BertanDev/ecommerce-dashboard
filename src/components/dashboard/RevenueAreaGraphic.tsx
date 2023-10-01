@@ -29,7 +29,7 @@ export function RevenueAreaGraphic() {
         </div>
       </div>
       <div className="mt-10">
-        <RevenueGraphic />
+        {typeof window !== 'undefined' ? <RevenueGraphic /> : ''}
       </div>
     </div>
   )
