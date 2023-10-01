@@ -37,7 +37,7 @@ export default function Dashboard() {
         </div>
         {/** Graphic */}
         <div className="flex w-full bg-white pt-6 px-6  rounded-sm">
-          <Graphic />
+          {typeof window !== 'undefined' ? <Graphic /> : ''}
         </div>
       </div>
       <div className="flex w-full h-full gap-4">
