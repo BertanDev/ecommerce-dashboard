@@ -1,3 +1,5 @@
+'use client'
+
 import { Graphic } from '@/components/dashboard/Graphic'
 import { InfoCard } from '@/components/dashboard/InfoCard'
 import { PlansInfo } from '@/components/dashboard/PlansInfo'
