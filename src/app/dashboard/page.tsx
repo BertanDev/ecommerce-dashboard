@@ -43,7 +43,7 @@ export default function Dashboard() {
       <div className="flex w-full h-full gap-4">
         {/** Last Sales */}
         <div className="flex w-[70%] bg-white rounded-sm">
-          <RevenueAreaGraphic />
+          {typeof window !== 'undefined' ? <RevenueAreaGraphic /> : ''}
         </div>
         {/** Active Plans */}
         <div className="flex p-4 bg-white w-[30%] justify-center rounded-sm">
