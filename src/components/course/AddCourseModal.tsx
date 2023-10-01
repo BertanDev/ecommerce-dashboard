@@ -54,7 +54,7 @@ export default function AddCourseModal() {
   useEffect(() => {
     async function getData() {
       const categoriesResponse = await fetch(
-        'http://www.vitorads.com.br/category/get-all',
+        'https://www.vitorads.com.br/category/get-all',
         {
           method: 'GET',
           headers: new Headers({
@@ -66,7 +66,7 @@ export default function AddCourseModal() {
       )
 
       const plansResponse = await fetch(
-        'http://www.vitorads.com.br/subscription-plan/get-all',
+        'https://www.vitorads.com.br/subscription-plan/get-all',
         {
           method: 'GET',
           headers: new Headers({
@@ -176,7 +176,7 @@ export default function AddCourseModal() {
       }
     } else {
       try {
-        const url = 'http://vitorads.com.br/product/update'
+        const url = 'https://vitorads.com.br/product/update'
         const headers = {
           'Content-Type': 'application/json',
           Accept: 'application/json',

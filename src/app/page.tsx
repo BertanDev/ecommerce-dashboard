@@ -37,7 +37,7 @@ export default function Home() {
   async function onSubmit(data: LoginAdministratorFormData) {
     try {
       const response = await api.post(
-        'http://vitorads.com.br/authentication/authenticate',
+        'https://vitorads.com.br/authentication/authenticate',
         {
           email: data.email,
           password: data.password,
